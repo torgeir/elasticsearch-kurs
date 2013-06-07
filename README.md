@@ -7,7 +7,7 @@ Insert fra .json fil
 `curl -XPOST 'http://localhost:9200/twitter/tweet' -d @file.json`
 
 
-lag en mapping
+Lag en mapping
 ---
 `curl -XDELETE 'http://localhost:9200/ansatte'`
 
