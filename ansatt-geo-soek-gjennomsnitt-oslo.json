@@ -1,0 +1,35 @@
+{
+  "query": {
+    "match_all": {}
+  },
+  "facets": {
+
+      "lat-snitt": {
+        "statistical": {
+          "field": "latlon.lat"
+        },
+
+        "facet_filter": {
+          "not": {
+            "term": {
+              "avdeling": "trondheim"
+            }
+          }
+        }
+      },
+
+      "lon-snitt": {
+        "statistical": {
+          "field": "latlon.lon"
+        },
+
+        "facet_filter": {
+          "not": {
+            "term": {
+              "avdeling": "trondheim"
+            }
+          }
+        }
+      }
+  }
+}
