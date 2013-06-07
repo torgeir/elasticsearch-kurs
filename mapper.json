@@ -1,0 +1,10 @@
+{
+  "ansatt" : {
+    "properties" : {
+      "latlon" : {
+        "type" : "geo_point",
+        "lat_lon": true
+      }
+    }
+  }
+}

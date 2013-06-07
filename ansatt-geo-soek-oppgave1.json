@@ -1,0 +1,18 @@
+{
+    "query": {
+      "match_all": {}
+    },
+    "sort": [
+        {
+          "_geo_distance": {
+            "latlon": [ 63.426577,10.380516 ]
+          }
+        }
+    ],
+    "filter": {
+      "geo_distance": {
+        "distance": "2km",
+        "latlon": [ 63.426577,10.380516 ]
+      }
+    }
+}

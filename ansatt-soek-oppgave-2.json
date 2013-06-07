@@ -1,0 +1,15 @@
+{
+  "query": {
+    "query_string": {
+      "query": "*"
+    }
+  },
+  "facets": {
+
+    "avdeling": {
+      "terms": {
+        "field": "avdeling"
+      }
+    }
+  }
+}
