@@ -4,7 +4,8 @@
       "latlon" : {
         "type" : "geo_point",
         "lat_lon": true
-      }
+      },
+      "startdato": { "type": "date", "format": "dd.MM.YYYY" }
     }
   }
 }
